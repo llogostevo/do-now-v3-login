@@ -1,5 +1,38 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  daisyui: {
+    themes: [
+      "light",
+      "dark",
+      "cupcake",
+      "bumblebee",
+      "emerald",
+      "corporate",
+      "synthwave",
+      "retro",
+      "cyberpunk",
+      "valentine",
+      "halloween",
+      "garden",
+      "forest",
+      "aqua",
+      "lofi",
+      "pastel",
+      "fantasy",
+      "wireframe",
+      "black",
+      "luxury",
+      "dracula",
+      "cmyk",
+      "autumn",
+      "business",
+      "acid",
+      "lemonade",
+      "night",
+      "coffee",
+      "winter",
+    ],
+  },
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
@@ -13,5 +46,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+  require("@tailwindcss/typography"), require("daisyui"),
+  require("daisyui")
+],
 }
